@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+  <html>
+    <head style = "background-color: #f1f1f1">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127170460-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-127170460-1');
+	</script>
+
+    	<title>Credit Card Fraud</title>
+	    
+	    <link rel="icon" type="image/ico" href="logo.jpg" />
+	   
+
+
+    	<style>
+
+			.header h1 {
+			  position: relative;
+			  top: 0px;
+			  left: 10px;
+			  text-align: center;
+			  font-family: Times New Roman;
+			  font-weight: bold;
+			  border: dashed;
+			}
+			
+			.header2 h1 {
+			  color: #fff;
+font-size: 10em;
+font-weight: bold;
+font-family: Helvetica;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+			 text-align: center;
+			 //background-color: #f1f1f1;
+			}
+    	</style>
+
+    	<div class="header2">
+		  <h1>Credit Card Fraud</h1>
+		</div>
+
+    	
+      <!--class="flow-text" style="background-color: #90caf9; text-align: center; font-size: 50px; color: #000000; font-family: Times New Roman; font-weight: bold;"-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body bgcolor="#e5f8ff">
+
+
+    	<style>
+
+
+
+    		footer { 
+			    display: block;
+			    color: black;
+			    background-color: #bcaaa4;
+			    width: 100%;
+			    height: 100%;
+			    text-align: center;
+			    font-size: 18px;
+			    padding: 0px, 0px;
+
+			}
+
+
+			.logo{
+				float: center;
+				margin: 10px 200px;
+			}
+
+			.img1 {
+			    display: block;
+			    margin-left: auto;
+			    margin-right: auto;
+			    width: 100%;
+			}
+
+			.img2{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%
+			}
+
+
+
+
+    	</style>
+
+
+
+
+
+		  <ul id="slide-out" class="sidenav">
+			<li><div class="user-view">
+			  <div class="background">
+				<!--<img src="images/office.jpg">-->
+			  </div>
+			  <a href="#user"><img class="circle" src="ChipIcon.png"></a>
+			  <a href="#name"><span class="white-text name">John Doe</span></a>
+			  <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+			</div></li>
+			<li><a class="waves-effect" href="#Section1"> <!--onclick="myFunction()"--> Problem Definition</a></li>
+			<li><a class="waves-effect" href="#Section2">Introduction</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Main content</a></li>
+			<li><a class="waves-effect" href="#Section3">Academic Research</a></li>
+			<li><a class="waves-effect" href="#Section4">Benchmark</a></li>
+			<li><a class="waves-effect" href="#Section5">Social Impact</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Extras</a></li>
+			<li><a class="waves-effect" href="#SectionInterview" <!--onclick="myFunction()"--> Interviews</a></li>
+			<li><a class="waves-effect" href="#SectionProposal" <!--onclick="myFunction()"--> Proposal</a></li>
+			<li><a class="waves-effect" href="#SectionProposal" <!--onclick="myFunction()"--> Persona</a></li>
+			<li><a class="waves-effect" href="./Feedback.html" <!--onclick="myFunction()"--> Feedback</a></li>
+			<li><a class="waves-effect" href="#SectionProposal" <!--onclick="myFunction()"--> Solution</a></li>
+			<li><a class="waves-effect" href="./Reports.html" <!--onclick="myFunction()"--> Reports</a></li>
+		  </ul>
+		  <!--<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>-->
+		  
+		  
+		  <!-- Element Showed -->
+		  <!--<a id="menu" class="waves-effect waves-light btn btn-floating"><i class="material-icons">menu</i></a>
+		  <a class="waves-effect waves-light btn" onclick="$('.tap-target').tapTarget('open')">Open tap target</a>
+
+		  <div class="tap-target" data-target="menu">
+			<div class="tap-target-content">
+			  <h5>Title</h5>
+			  <p>A bunch of text</p>
+			</div>
+		  </div>-->
+		  
+		  <div class="fixed-action-btn direction-top active" style="bottom: 45px; right: 24px;">
+          <a id="menu" class="btn btn-floating btn-large cyan sidenav-trigger" data-target="slide-out">
+            <i class="material-icons">menu</i>
+          </a>
+        </div>
+		
+		<!--<div class="tap-target-wrapper" style="right: -331.2px; bottom: -326.8px; position: fixed;"><div class="tap-target cyan" data-target="menu">
+          <div class="tap-target-content white-text" style="width: 456px; height: 400px; top: 0px; right: 0px; bottom: 0px; left: 0px; padding: 56px; vertical-align: bottom;">
+            <h5>I am here</h5>
+            <p class="white-text">Provide value and encourage return visits by introducing users to new features and functionality at contextually
+              relevant moments.</p>
+          </div>
+        </div><div class="tap-target-wave" style="top: 344px; left: 344px; width: 112px; height: 112px;"><a class="btn btn-floating btn-large cyan tap-target-origin">
+            <i class="material-icons">menu</i>
+          </a></div></div>-->
+  
+  
+ <!--div id="myDIV"--> 
+<div id="Section1">
+	<main>
+	<div class="parallax-container">
+      <div class="parallax"><img src="Credit-Cards.jpg" style="transform: translate3d(-50%, 400px, 0px); opacity: 1;"></div>
+    </div>
+	
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Problem</h2>
+        <p class="flow-text" style="text-align: justify;">Credit Card fraud. What is it? This problem covers the acts of ID the.t and use of someone else's credit cards, also including its physical or digital information, for unauthorized purchases of products or online transactions. <br>There are multiple techniques and tools used to perform this and collect either your data or the card, but there are also methods to counter it such as freezing the account linked to the credit card.</p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="credit-cards2.jpg" style="transform: translate3d(-50%, 512.874px, 0px); opacity: 1;"></div>
+    </div>	
+	</main>
+</div>
+
+<div id="Section2">
+	<main>
+	<div class="parallax-container">
+      <div class="parallax"><img src="Question.jpg" style="transform: translate3d(-50%, 400px, 0px); opacity: 1;"></div>
+    </div>
+	
+    <div class="background-color: #4286f4"><!--   <div class=" section white background-color: green">  -->
+      <div class="row container"> <!--  <div class="row container  background-color: #red">   -->
+        <h2 class="header">Introduction</h2>
+        <p class="flow-text" style="text-align: justify;">
+Credit Card fraud happends when someone steal your credit or debit card, as well as information or your PIN to make some purchases at a physical store or online, make a transtaction or withdraw money directly from any ATM. This can happen if a person looks for information related to your bank account on your mailbox, using fake emails where they ask for your cc info, through a non-official website where the cardholder makes a
+ purchase or with a device that copies the cc when you swipe through it, called skimmer. This is a usual situation that millions of people around the globe have suffered at least one time in their life. And this is posssibe and increasing significantly with the time, thanks to the fast growing of the technology and the internet, and that is why, most part of the time the users affected by this situation get involved for some suspicius purchases on the internet, when insted it should be more safe for anyone buy something via internet for the fast evolution in cibersecurity.</p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="Question.jpg" style="transform: translate3d(-50%, 512.874px, 0px); opacity: 1;"></div>
+    </div>	
+	</main>
+</div>
+
+<div id="Section3">
+	<main>
+	<div class="parallax-container">
+      <div class="parallax"><img src="AcademicResearch.jpg" style="transform: translate3d(-50%, 400px, 0px); opacity: 1;"></div>
+    </div>
+	
+    <div class=""> <!-- <div class=" section white">  -->
+      <div class="row container">
+        <h2 class="header">Academic Research</h2>
+        <p class="flow-text" style="text-align: justify;">The cloning is one of the major fraud experienced by users of financial services.
+
+		If you use credit or debit cards to make your payments, you must take precautions, because frauds usually occur when you least imagine.
+
+		Possible causes of alleged fraud on cards are:<br>
+
+		• Theft or loss of plastic.<br>
+
+		• Cloning of the magnetic strip in ATMs or terminals.<br>
+
+		• Shopping by phone or online.<br>
+
+		• Wire transfers.<br>
+
+		• Falsification of personal data. And those are the most known just to mention some. <br>But this is not the alarming thing, because in relation to some statistics in Mexico, in the first quarter of 2018, cyber frauds grew 63% over the same period of 2017 and represent a higher proportion each year (from 13% to 61%). The amount of cyber frauds rise to $ 2,340 million pesos; 60% of the amount claimed was refunded, and 89 out of 100 cyber frauds were resolved in favor of the user. </p>
+		<br>
+		<!-- <p class="flow-text" style="text-align: justify;">These are some alarming facts, because this just mean that the problem continue growing, and we dont see any solid measures that help people to prevent this kind of frauds, that become more common betweeen the people around the world.</p> -->
+
+		<img class="img1" src="statistics.png">
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="AcademicResearch2.jpg" style="transform: translate3d(-50%, 512.874px, 0px); opacity: 1;"></div>
+    </div>	
+	</main>
+</div>
+
+<div id="Section4">
+	<main>
+	<div class="parallax-container">
+      <div class="parallax"><img src="Benchmark.jpg" style="transform: translate3d(-50%, 400px, 0px); opacity: 1;"></div>
+    </div>
+	
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Benchmark</h2>
+        <p class="flow-text" style="text-align: justify;">Just like mentioned above, using the EMV (chip-and-PIN card) can reduce the risk due its computer chip which store card 
+		data. The difference with manetic stripes is that each a payment is made, the chip generates an unreusable transaction code. This fixes in-store payments, 
+		but online shopping is a bit different. According to some experts, this should go on the side of the online store, as they can have the ID and sometimes a 
+		little more information that can help them tell if the "buyer" is legitimate.</p>
+		<p class="flow-text" style="text-align: justify;"> As well as in Japan, several banks have just installed massively biometric ATMs that allow users to withdraw money by scanning the veins of the hand, a system that was born after 20 years of research and promises to definitively end this type of scams.
+
+		The new biometric system allows to read the pattern of the veins in the palm of each user's hand and is considered infallible, since the blood must be flowing to register the image or pattern, which is unique for each individual, even in the case of identical twins. After scanning, the user must enter their password. That is, all types of cards are dispensed with, and the cashier will warn when someone install or attach any type of foreign device.</p>
+
+		<img class="img2" src="biom.jpg">
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="Benchmark.jpg" style="transform: translate3d(-50%, 512.874px, 0px); opacity: 1;"></div>
+    </div>	
+	</main>
+</div>
+
+<div id="Section5">
+	<main>
+	<div class="parallax-container">
+      <div class="parallax"><img src="ATM.jpg" style="transform: translate3d(-50%, 400px, 0px); opacity: 1;"></div>
+    </div>
+	
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Social Impact</h2>
+        <p class="flow-text" style="font-family: sans-serif;">According to an ACI Worldwide Impact Report – Global Consumers: Losing Confidence in the Battle Against Fraud– 27 percent of cardholders (debit, credit and prepaid) had experienced card fraud in the past five years. After experiencing fraud, however, 63 percent of consumers use their card less, at least in some situations, than they had previously. In 2014, 14 percent of debit and credit card holders cite having experienced multiple
+		cases of fraud during the past five years.
+
+		Of cardholders who received replacement cards as a result of a data breach or fraudulent activity, 43 percent used the new card less than the original.
+
+		Consumers who are dissatisfied with how they are treated by their financial institution following fraud sometimes change providers, resulting in a global attrition rate of 23 percent. Eighteen percent of global consumers lack confidence that their financial institution can protect them from fraud.</p>
+
+		<p class="flow-text" style="text-align: justify;">And this is one of the main social impacts that the credit and debit card fraud creates, because what person can feel safe and comfortable using  their credit or debit card again after passing through this kind of situation, no one feels the same way, and most people stay afraid of that situation can will happen again.</p>
+
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="Security.jpg" style="transform: translate3d(-50%, 512.874px, 0px); opacity: 1;"></div>
+    </div>	
+	</main>
+</div>
+
+<div id="SectionInterview">
+	<main>
+	<!--<div class="parallax-container">
+      <div class="parallax"><img src="ATM.jpg" style="transform: translate3d(-50%, 400px, 0px); opacity: 1;"></div>
+    </div>-->
+	
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Interviews</h2>
+        <p class="flow-text" style="font-family: sans-serif;">This person is a student who uses his credit card in constant basis. The Information given is related to
+		events, consitency and a small explanation of topics related to credit card use.<br>
+		<audio controls>
+		  <source src="FinalAudioMod.wav" type="audio/ogg">
+		  
+		
+		</audio>
+		</p>
+
+		<p class="flow-text" style="font-family: sans-serif;">This person is a professional in the area of Credit/Debit Card Fraud in Condusef, the institution in charge to help to solve any situation related to all kind of financial frauds.<br>
+		</p>
+
+		
+
+		<div class="col s12 card-panel blue lighten-5 flow-text" onclick="window.open('./ExpertInterview.html');" style="cursor: pointer;">
+			<p class="flow-text" style="text-align: justify;" >Check the Expert Interview!</p>
+		</div>
+	
+		<p class="flow-text" style="text-align: justify;"></p>
+
+      </div>
+    </div>
+    <!--<div class="parallax-container">
+      <div class="parallax"><img src="Security.jpg" style="transform: translate3d(-50%, 512.874px, 0px); opacity: 1;"></div>
+    </div>-->	
+	</main>
+</div>
+
+<div id="SectionProposal">
+	<main>
+	<!--<div class="parallax-container">
+      <div class="parallax"><img src="ATM.jpg" style="transform: translate3d(-50%, 400px, 0px); opacity: 1;"></div>
+    </div>-->
+	
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Proposal</h2>
+        <p class="flow-text" style="font-family: sans-serif;"><br>
+			
+		</p>
+	
+		<div class="col s12 card-panel blue lighten-5 flow-text" onclick="window.open('FinalProposal.pdf');" style="cursor: pointer;">
+			<p class="flow-text" style="text-align: justify;" >Check the proposal!</p>
+		</div>
+      </div>
+    </div>
+    <!--<div class="parallax-container">
+      <div class="parallax"><img src="Security.jpg" style="transform: translate3d(-50%, 512.874px, 0px); opacity: 1;"></div>
+    </div>-->	
+	</main>
+</div>
+
+<div id="SectionPersona">
+	<main>
+	<!--<div class="parallax-container">
+      <div class="parallax"><img src="ATM.jpg" style="transform: translate3d(-50%, 400px, 0px); opacity: 1;"></div>
+    </div>-->
+	
+    <div class="section white">
+      <div class="row container">
+        <h2 class="header">Persona</h2>
+        <p class="flow-text" style="font-family: sans-serif;"><br>
+		<div class="col s12 card-panel blue lighten-5 flow-text" onclick="window.open('https://app.xtensio.com/he1luw0s','mywindow');" style="cursor: pointer;">
+			<p class="flow-text" style="text-align: justify;" >Check the Persona</p>
+		</div>
+		</p>
+	
+		
+
+      </div>
+    </div>
+    <!--<div class="parallax-container">
+      <div class="parallax"><img src="Security.jpg" style="transform: translate3d(-50%, 512.874px, 0px); opacity: 1;"></div>
+    </div>-->	
+	</main>
+</div>
+
+
+<div class="section white">
+      <div class="row container">
+        <h2 class="header">Solution</h2>
+        <p class="flow-text" style="font-family: sans-serif;"><br>
+			
+		</p>
+	
+		<div class="col s12 card-panel blue lighten-5 flow-text" onclick="window.open('./Solution.html');" style="cursor: pointer;">
+			<p class="flow-text" style="text-align: justify;" >Check our solution!</p>
+		</div>
+      </div>
+    </div>
+    <!--<div class="parallax-container">
+      <div class="parallax"><img src="Security.jpg" style="transform: translate3d(-50%, 512.874px, 0px); opacity: 1;"></div>
+    </div>-->	
+	</main>
+</div>
+
+
+
+
+
+
+
+
+
+<!--<button onclick="myFunction()">Ver calificacion</button>-->
+<footer class="background-color: #43b7f9" style = "background-color: #43b7f9">
+	<div class="FooterStyle">
+	  <p>Authors: Uriel Madrigal & Jorge Manzo</p>
+	  <p>Contact information: <a href="mailto:someone@example.com">CreditCardClonationP@outlook.com</a></p>
+	 </div>
+</footer>
+	
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  
+	  <script type="text/javascript">
+		  document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.sidenav');
+			var instances = M.Sidenav.init(elems);
+			});
+			
+			document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.tap-target');
+			var instances = M.TapTarget.init(elems);
+		  });
+  
+			document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.parallax');
+			var instances = M.Parallax.init(elems);
+		  });
+		  
+		  /*elemento = document.getElementById("myDIV");
+			elemento.addEventListener("load",myFunction);
+			console.log(elemento);*/
+		  
+		  function myFunction() {
+				//var x = document.getElementById("myDIV");
+				var x = document.getElementById("SectionInterview");
+				var y = document.getElementById("myDIV2");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+			
+			function myFunction2() {
+				//var x = document.getElementById("myDIV");
+				var x = document.getElementById("SectionExtra");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+			}
+		</script>
+    </body>
+  </html>
